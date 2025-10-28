@@ -1,0 +1,154 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #e3e9f7;   
+}
+
+
+#barNavegation{
+    height: 100vh;
+    width: 80px;
+    position: relative;
+    background-color: #ffff;
+    border-radius: 0 18px 18px 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: width 0.3s ease;
+}
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+
+#z_user{
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 8px;
+}
+
+#z_user img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#z_user div{
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+#z_user div span:last-child{
+    color: #6b6b6b;
+    font-size: 12px;
+}
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+
+#z_itens ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 8px;
+}
+
+#z_itens a{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 12px;
+    text-decoration: none;
+    gap: 12px;
+    border-radius: 8px;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+
+#z_itens a.ativo{
+    color: white;
+    background-color: #4f46e5;
+}
+
+#z_itens a:not(.ativo):hover{
+    background-color: #c6ccd9;
+}
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+
+#bar_inferior{
+    padding-top: 0.5rem;
+    border-top: 1px solid #e3e9f7;
+}
+
+#bar_inferior a{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 10px;
+    text-decoration: none;
+    gap: 8px;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+
+#btn{
+    position: absolute;
+    top: 30px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+
+.ocult{
+    width: 0px;
+    overflow: hidden;
+}
+
+
+#barNavegation.open {
+    width: 300px; 
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+/* Esse código praticamente funciona por meio de especificidade do css
+-Ao abrir a página, a navbar tem width de 80px - ao clicar no btn
+temos uma rotação de 180deg (add class rotate ao elemento btn) e adicionamento
+a classe open na navbar, a classe open em ocnjunto com a navbar, é mais especifico
+-lembre da ideia de especificidade do css e de sua cascata */
