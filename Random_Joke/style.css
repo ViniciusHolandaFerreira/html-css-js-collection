@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    font-family: 'Lora', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./imgs/img_fundo.png);
+}
+
+#content {
+    width: 460px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 0px 40px 20px 40px;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column; 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#zone_img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#zone_img img {
+    width: 150px;
+    animation-name: imagem; 
+    animation-duration: 2.5s; 
+    animation-timing-function: ease-in-out; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+
+#zone_img h1 {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+#zone_img::after {
+    content: '—★—';
+    display: block;
+    color: #d1b793; 
+    font-size: 1.1em;
+    letter-spacing: 0.2em;
+    margin-bottom: 5px;
+}
+
+#zone_joke {
+    min-height: 100px;   
+    max-height: 200px;   
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 12px;
+    box-shadow: #d1b793 0px 0px 5px 0px, #d1b793 0px 0px 1px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#zone_joke p {
+    width: 320px;
+    height: 200px;
+    display: flex;           
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;      
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    overflow: auto;
+}
+
+
+#zone_button button { 
+    color: white;
+    background-color: #8040a0;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 40px;
+    font-family: 'Lora', serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+#zone_button button:hover {
+    background-color: #b39366; 
+    transform: translateY(-3px); 
+}
+
+#zone_button button:active {
+    transform: translateY(0); 
+}
+
+@keyframes imagem {
+  0% {
+    transform: translateY(0px); 
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px); 
+  }
+}
