@@ -5,8 +5,10 @@ let listaR = new ListaRegistros(atualizarTela)
 let form = document.querySelector("#form")
 let listReg = document.querySelector("#listaReg")
 
-
 form.addEventListener("submit", (event) => criarCadastro(event))
+document.addEventListener("click", (el) => {
+    console.log(el.target)
+})
 
 
 function criarCadastro(event){

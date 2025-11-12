@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./script.js"></script>
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div id="app-container">
+        <!------------------------------------------------------------->
+        <div id="header-section">
+            <h1 id="app-title">Currency Converter</h1>
+        </div>
+        <!------------------------------------------------------------->
+        <div id="input-section">
+            <label id="label-amount" for="input-amount">Valor</label>
+            <input id="input-amount" type="number">
+            <div id="currency-selectors">
+                <div>
+                    <label for="currency-from">From</label>
+                    <select id="currency-from">
+                        <option selected value="USD">USD</option>
+                        <option value="AED">AED</option>
+                        <option value="AFN">AFN</option>
+                        <option value="ALL">ALL</option>
+                        <option value="AMD">AMD</option>
+                        <option value="ANG">ANG</option>
+                        <option value="AOA">AOA</option>
+                        <option value="ARS">ARS</option>
+                        <option value="AUD">AUD</option>
+                        <option value="BRL">BRL</option>
+                        <option value="CAD">CAD</option>
+                        <option value="CHF">CHF</option>
+                        <option value="CNY">CNY</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="JPY">JPY</option>
+                    </select>
+                </div>
+                 <button id="btn_reverse"><span class="material-symbols-outlined">arrow_forward</span></button>
+                 <div>
+                    <label for="currency-to">To</label>
+                    <select id="currency-to">
+                        <option value="USD">USD</option>
+                        <option value="AED">AED</option>
+                        <option value="AFN">AFN</option>
+                        <option value="ALL">ALL</option>
+                        <option value="AMD">AMD</option>
+                        <option value="ANG">ANG</option>
+                        <option value="AOA">AOA</option>
+                        <option value="ARS">ARS</option>
+                        <option value="AUD">AUD</option>
+                        <option selected value="BRL">BRL</option>
+                        <option value="CAD">CAD</option>
+                        <option value="CHF">CHF</option>
+                        <option value="CNY">CNY</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="JPY">JPY</option>
+                    </select>
+                 </div>
+
+            </div>
+        </div>
+        <!------------------------------------------------------------->
+        <div id="output-section">
+            <button id="btn-convert">Converter</button>
+            <div id="conversion-result"></div>
+        </div>
+        <!------------------------------------------------------------->
+    </div>
+</body>
+</html>
