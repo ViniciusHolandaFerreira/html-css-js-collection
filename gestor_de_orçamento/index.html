@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./script.js"></script>
+    <title>Gestor de Orçamento</title>
+</head>
+<body>
+
+    <h1 id="title">Gestor de Orçamento</h1>
+
+    <div id="zone_01">
+        <p id="zone_01_balanco">0</p>
+        <div id="zone_01_gd">
+            <div id="ganhos">
+                <h3>Ganhos</h3>
+                <p>0</p>
+            </div>
+            <div id="despesas">
+                <h3>Despesas</h3>
+                <p>0</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="zone_02">
+        <h2 id="zone_02_title">Histórico</h2>
+        <div id="zone_02_ht"></div>
+    </div>
+
+    <div id="zone_03">
+        <h2 id="zone_03_title">Adicionar</h2>
+        <div id="zone_03_inputs">
+            <label for="text">Texto:</label>
+            <input type="text" id="text" placeholder="Escrever o texto...">
+            <label for="qtd">Quantidade(-/+):</label>
+            <input type="text" id="qtd" placeholder="Insira a quantidade...">
+            <button id="btn">Adicionar transação</button>
+        </div>
+    </div>
+
+</body>
+</html>
