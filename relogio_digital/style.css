@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: #8c52ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#container{
+  width: 30%;
+  min-width: 500px;
+  padding: 20px 0;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.338);
+}
+
+#container_timer{
+  margin: 0 1.5rem;
+  padding: 40px;
+  font-family: "Roboto", sans-serif;
+  color: #8c52ff;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 8px;
+  box-shadow: 0 0 20px rgba(65, 5, 145, 0.25);
+}
+
