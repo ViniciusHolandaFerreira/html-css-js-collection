@@ -1,0 +1,122 @@
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      height: 100vh;
+      background-color: #121212;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Courier New', monospace;
+    }
+
+    #timer_zone {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+      background-color: #1e1e1e;
+      padding: 2rem 3rem;
+      border-radius: 16px;
+      box-shadow: 0 0 20px #00ffc3a2;
+    }
+
+    #output_data {
+      font-size: 1.2rem;
+      color: #bbb;
+    }
+
+    #output_relogio {
+      font-size: 4rem;
+      color: #00ffc3;
+      text-shadow: 0 0 8px #00ffc3;
+    }
+
+    #alarme_zone {
+      text-align: center;
+    }
+
+    #alarme_zone p {
+      margin-bottom: 0.5rem;
+    }
+
+    #hora_alarme {
+      font-weight: bold;
+      color: #facc15;
+    }
+
+    input[type="number"] {
+      padding: 0.4rem;
+      width: 60px;
+      border-radius: 6px;
+      border: none;
+      text-align: center;
+    }
+
+    button {
+      padding: 0.4rem 1rem;
+      margin: 0.4rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease-in-out;
+    }
+
+    #btn_ativar {
+      background-color: #10b981;
+      color: white;
+    }
+
+    #btn_ativar:hover {
+      background-color: #059669;
+    }
+
+    #btn_parar {
+      background-color: #ef4444;
+      color: white;
+    }
+
+    #btn_parar:hover {
+      background-color: #dc2626;
+    }
+
+.alarme_tocando {
+  color: #ff1a1a !important;
+  text-shadow:
+    0 0 10px #ff1a1a,
+    0 0 20px #ff1a1a,
+    0 0 30px #ff1a1a,
+    0 0 40px #ff4d4d;
+  animation: alarmeTremor 1.2s ease-in-out infinite;
+  font-weight: 900;
+  font-size: 4.8rem;
+  letter-spacing: 2px;
+}
+
+@keyframes alarmeTremor {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1.05) rotate(-1deg);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.1) rotate(1deg);
+    opacity: 0.7;
+  }
+  75% {
+    transform: scale(1.05) rotate(-1deg);
+    opacity: 0.85;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
