@@ -1,0 +1,135 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: whitesmoke;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#container {
+    background-color: white;
+    padding: 20px;
+    padding-top: 70px; 
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+
+#zbibli {
+    position: fixed;      
+    bottom: 20px;         
+    right: 20px;          
+    z-index: 1000;         
+}
+
+#btn_bibli {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: transparent;
+    color: black;
+    background-color: whitesmoke;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#btn_bibli:hover {
+    color: white;
+    transform: scale(1.05);
+    background-color: #dc3545;
+}
+
+#zImg {
+    position: absolute;
+    top: -140px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+#img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 14px solid whitesmoke; 
+    background-color: white;
+}
+
+#nome {
+    font-size: 1.8rem; 
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-top: 110px;
+    margin-bottom: 12px;
+}
+
+#locali {
+    font-size: 1.2rem;
+    color: #888;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+#zBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    align-items: stretch;
+    gap: 8px;
+    width: 100%; 
+}
+
+#zBtn > button {
+    color: #333;
+    text-decoration: none;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    transition: background-color 0.3s ease;
+    flex-grow: 1; /* Permite que ambos cresçam */
+    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    transition: 0.4s ease-in-out;
+}
+
+#btn_gerar {
+    background-color: #f0f2f5;
+    flex-basis: 85%; /* Define a base para 75% */
+    max-width: 85%; /* Garante que não ultrapasse 75% */
+}
+
+#btn_favoritar {
+    background-color: #f0f2f5;  
+    flex-basis: 15%; /* Define a base para 25% */
+    max-width: 15%; /* Garante que não ultrapasse 25% */
+}
+
+#btn_gerar:hover, #btn_favoritar:hover{
+    color: white;
+    transform: scale(1.02);
+    background-color: #dc3545;
+}
+
+
+
+
+
